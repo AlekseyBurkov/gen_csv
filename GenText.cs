@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace gen_csv
+namespace GenScv 
 {
     class GenText
     {
-        char[] letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
-        char[] lettersCyrillic = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".ToCharArray();
+        char[] _letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+        char[] _lettersCyrillic = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".ToCharArray();
         
         Random rand = new Random();
 
@@ -22,8 +22,8 @@ namespace gen_csv
             string word = "";
             for (int j = 0; j < numLetters; j++)
             {
-                int letter_num = rand.Next(0, lettersCyrillic.Length - 1);
-                word += lettersCyrillic[letter_num];
+                int letterNum = rand.Next(0, _lettersCyrillic.Length - 1);
+                word += _lettersCyrillic[letterNum];
             }
             return word;
         }
