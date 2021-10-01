@@ -4,16 +4,16 @@ namespace GenScv
 {
     class InputParam
     {
-        int columns = 4;
-        int rows = 20;
-        int length = 15;
-        string encoding = "UTF-8";
-        string outFile = "out.csv";
-        public int Columns => columns;
-        public int Rows => rows;
-        public int Length => length;
-        public string Encoding => encoding;
-        public string OutFile => outFile;
+        int _columns = 4;
+        int _rows = 20;
+        int _length = 15;
+        string _encoding = "UTF-8";
+        string _outFile = "out.csv";
+        public int Columns => _columns;
+        public int Rows => _rows;
+        public int Length => _length;
+        public string Encoding => _encoding;
+        public string OutFile => _outFile;
 
         
     }
